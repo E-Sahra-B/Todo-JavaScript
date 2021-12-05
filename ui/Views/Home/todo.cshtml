@@ -1,0 +1,32 @@
+﻿@model ui.Models.todo
+@{
+    ViewData["Title"] = "todo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row d-flex justify-content-center container">
+    <div class="col-md-8">
+        <div class="card-hover-shadow-2x mb-3 card">
+            @using (Html.BeginForm("Ekle", "Home", FormMethod.Post))
+            {
+                <div class="card-header-tab card-header">
+                    <input type="text" class="form-control" asp-for="konu" />
+                        @*@Html.TextBoxFor(x => x.konu, new { @class = "form-control" })*@
+                    @*@{ 
+                        int a = 5;
+                        int b = 3;
+                        int c=a++ * b--;
+                        <input value="@c">
+
+
+                    }*@
+
+                    <button class="btn btn-success">Ekle</button>
+                </div>
+            } 
+
+
+    @*@await Html.PartialAsync("~/Views/Home/Getir.cshtml")
+            <partial name="~/Views/Home/Getir.cshtml" />*@
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta name="viewport" content="width=device-width" />
+    <title>TodoIsmek</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mt-3 mb-3">To Do List</h2>
+        <div class="container mb-3 col-md-8">
+            <input type="text" class="form-control" id="task" placeholder="Entry task" />
+        </div>
+        <div class="row">
+            <div class="offset-md-2 col-md-4">
+                <div id="listTodo" class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Todo</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="listDone" class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Done</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/myScript.js"></script>
+</body>
+</html>
